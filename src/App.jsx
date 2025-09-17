@@ -11,9 +11,10 @@ import theme from "./theme/theme";
 import "./theme/globalStyles.css";
 import RegistrationPage from "./components/RegistrationPage";
 import LoginPage from "./components/LoginPage";
-import ProfilePage from "./components/ProfilePage"; // Добавьте импорт
-import CategoryPage from "./components/CategoryPage"; // Добавьте импорт и исправьте опечатку
-import NotFoundPage from "./components/notFoundPage"; // Лучше создать компонент для 404
+import ProfilePage from "./components/ProfilePage";
+import CategoryPage from "./components/categoryPage";
+import NotFoundPage from "./components/notFoundPage";
+import TestPage from "./components/testPage";
 
 // Защищенный маршрут (пример реализации)
 const ProtectedRoute = ({ children }) => {
@@ -44,6 +45,14 @@ function App() {
               element={
                 <ProtectedRoute>
                   <CategoryPage />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path="/profile/category/test"
+              element={
+                <ProtectedRoute>
+                  <TestPage />
                 </ProtectedRoute>
               }
             />

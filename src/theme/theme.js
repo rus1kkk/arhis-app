@@ -29,6 +29,10 @@ const theme = createTheme({
       main: "#006FFF",
       contrastText: "#ffffff",
     },
+    yellow: {
+      main: "#CFAF11",
+      contrastText: "#ffffff",
+    },
     outlined: {
       main: "#ffffff",
     },
