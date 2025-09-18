@@ -12,7 +12,7 @@ import {
   IconButton,
 } from "@mui/material";
 import { Visibility, VisibilityOff, Email } from "@mui/icons-material";
-import logoWithText from "../assets/logoWithText.svg";
+import logoWithText from "../assets/hiking.png";
 
 const LoginPage = () => {
   const [showPassword, setShowPassword] = useState(false);

@@ -6,9 +6,10 @@ import {
   Avatar,
   Chip,
   Paper,
+  colors,
 } from "@mui/material";
 import { Link } from "react-router-dom";
-import logoWithText from "../assets/logoWithText.svg";
+import logoWithText from "../assets/hiking.png";
 import ResultsTable from "./resultsTable";
 import BasicAvatar from "../assets/avatar.png";
 import EmojiEventsIcon from "@mui/icons-material/EmojiEvents";
@@ -27,13 +28,13 @@ const ProfilePage = () => {
           py: 4,
         }}
       >
-        <Box>
+        {/* <Box>
           <img
             src={logoWithText}
             alt="Курорт"
             style={{ width: "180px", height: "auto" }}
           />
-        </Box>
+        </Box> */}
         <Box sx={{ marginTop: "40px", display: "flex", gap: "40px" }}>
           <Avatar
             alt="Basic avatar"
@@ -82,6 +83,9 @@ const ProfilePage = () => {
             }}
           >
             Место
+            <Typography sx={{ color: "black", fontSize: "32px" }}>
+              13
+            </Typography>
           </Paper>
           <Paper
             elevation={4}
@@ -94,6 +98,7 @@ const ProfilePage = () => {
             }}
           >
             Результат
+            <Typography sx={{ color: "red", fontSize: "32px" }}>6</Typography>
           </Paper>
           <Paper
             elevation={4}
@@ -106,6 +111,9 @@ const ProfilePage = () => {
             }}
           >
             Время
+            <Typography sx={{ color: "#FD6A02", fontSize: "32px" }}>
+              10:00
+            </Typography>
           </Paper>
         </Box>
         <ResultsTable />

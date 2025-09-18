@@ -1,7 +1,7 @@
 // components/NotFoundPage.jsx
 import { Container, Typography, Button, Box } from "@mui/material";
 import { Link } from "react-router-dom";
-import logoWithText from "../assets/logoWithText.svg";
+import logoWithText from "../assets/hiking.png";
 
 const NotFoundPage = () => {
   return (

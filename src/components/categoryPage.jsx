@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Container, Typography, Button, Box, Stack } from "@mui/material";
 import { Link } from "react-router-dom";
-import logoWithText from "../assets/logoWithText.svg";
+import logoWithText from "../assets/hiking.png";
 
 const CategoryPage = () => {
   const [selectedCategory, setSelectedCategory] = useState(null);

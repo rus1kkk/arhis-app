@@ -14,7 +14,7 @@ import {
   IconButton,
 } from "@mui/material";
 import { Visibility, VisibilityOff, Email, Person } from "@mui/icons-material";
-import logoWithText from "../assets/logoWithText.svg";
+import logoWithText from "../assets/hiking.png";
 
 const RegistrationPage = () => {
   const [showPassword, setShowPassword] = useState(false);

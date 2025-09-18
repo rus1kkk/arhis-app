@@ -15,6 +15,8 @@ import ProfilePage from "./components/ProfilePage";
 import CategoryPage from "./components/categoryPage";
 import NotFoundPage from "./components/notFoundPage";
 import TestPage from "./components/testPage";
+import ShopPage from "./components/shopPage";
+import HomePage from "./components/HomePage";
 
 // Защищенный маршрут (пример реализации)
 const ProtectedRoute = ({ children }) => {
@@ -31,7 +33,9 @@ function App() {
         <div className="app">
           <Routes>
             <Route path="/registration" element={<RegistrationPage />} />
+            <Route path="shop" element={<ShopPage />} />
             <Route path="/login" element={<LoginPage />} />
+            <Route path="/home" element={<HomePage />} />
             <Route
               path="/profile"
               element={
